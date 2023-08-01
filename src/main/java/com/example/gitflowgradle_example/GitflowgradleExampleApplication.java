@@ -6,8 +6,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class GitflowgradleExampleApplication {
 
-  public static void main(String[] args) {
-    SpringApplication.run(GitflowgradleExampleApplication.class, args);
-  }
+    public static void main(String[] args) {
+        SpringApplication.run(GitflowgradleExampleApplication.class, args);
+        System.out.println("Hello");
+    }
 
 }
