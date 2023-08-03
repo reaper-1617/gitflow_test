@@ -44,3 +44,4 @@ initJGitflow{
     hotfix = "hotfix/"
     versiontag = 'v'
 }
+
