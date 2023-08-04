@@ -47,8 +47,7 @@ initJGitflow{
     versiontag = 'v'
 }
 
-def gitUsername='rrr'
-def gitPassword='rrr'
+
 
 
 //tasks.register('initGitFlowCustom'){
