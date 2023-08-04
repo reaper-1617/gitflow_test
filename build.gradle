@@ -1,3 +1,4 @@
+
 buildscript {
     repositories {
         mavenCentral()
@@ -29,6 +30,7 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'com.jcraft:jsch:0.1.55'
 }
 
 tasks.named('test') {
@@ -45,3 +47,12 @@ initJGitflow{
     versiontag = 'v'
 }
 
+def gitUsername=''
+def gitPassword=''
+
+
+//tasks.register('initGitFlowCustom'){
+//    doLast{
+//        println 'Hello'
+//    }
+//}
