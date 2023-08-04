@@ -47,8 +47,8 @@ initJGitflow{
     versiontag = 'v'
 }
 
-def gitUsername=''
-def gitPassword=''
+def gitUsername='rrr'
+def gitPassword='rrr'
 
 
 //tasks.register('initGitFlowCustom'){
@@ -56,3 +56,9 @@ def gitPassword=''
 //        println 'Hello'
 //    }
 //}
+
+task getHomeDir {
+    doLast {
+        println gradle.gradleHomeDir
+    }
+}
