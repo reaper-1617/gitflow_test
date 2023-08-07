@@ -47,3 +47,8 @@ initJGitflow{
 
 
 // changes just for commit
+task getHomeDir {
+    doLast {
+        println gradle.gradleHomeDir
+    }
+}
