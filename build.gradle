@@ -57,7 +57,5 @@ task checkVersionProp{
     doLast {
         println project.hasProperty('version')
         println project.property('version')
-//        println project.hasProperty('releaseVersion')
-//        println project.property('releaseVersion')
     }
 }
