@@ -16,7 +16,7 @@ plugins {
 apply plugin: 'io.github.robwin.jgitflow'
 
 group = 'com.example'
-version = '0.0.2-SNAPSHOT'
+//version = '0.0.2-SNAPSHOT'
 
 java {
     sourceCompatibility = '17'
@@ -57,7 +57,7 @@ task checkVersionProp{
     doLast {
         println project.hasProperty('version')
         println project.property('version')
-        println project.hasProperty('releaseVersion')
-        println project.property('releaseVersion')
+//        println project.hasProperty('releaseVersion')
+//        println project.property('releaseVersion')
     }
 }
