@@ -36,6 +36,19 @@ tasks.named('test') {
 }
 
 
+task setGitCredentials{
+    doLast{
+        def user = System.getProperty('GITFLOW_USERNAME')
+        def pwd = System.getProperty('GITFLOW_PASSWORD')
+        if (user){
+            project.setProperty('gitUsername', name)
+        }
+        if (pwd){
+            project.setProperty('gitPassword', pwd)
+        }
+    }
+}
+
 initJGitflow{
     master = "master"
     develop = "develop"
@@ -57,5 +70,20 @@ task checkVersionProp{
     doLast {
         println project.hasProperty('version')
         println project.property('version')
+    }
+}
+
+task checkGitCreds{
+    doLast {
+        def hasUser = project.hasProperty('gitUsername')
+        println hasUser
+        if (hasUser){
+            println project.property('gitUsername')
+        }
+        def hasPwd = project.hasProperty('gitPassword')
+        println hasPwd
+        if (hasPwd){
+            println project.property('gitPassword')
+        }
     }
 }
