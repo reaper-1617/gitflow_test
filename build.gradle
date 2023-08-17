@@ -1,11 +1,15 @@
 buildscript {
     repositories {
         mavenCentral()
+        jcenter()
+        flatDir { dirs 'libs' }
     }
     dependencies {
-        classpath 'io.github.robwin:jgitflow-gradle-plugin:0.6.0'
-        classpath fileTree(include: ['*.jar'], dir: '/libs')
-        classpath files('libs/jgitflow-gradle-plugin-0.7.0-SNAPSHOT-CUSTOM.jar')
+//        classpath 'io.github.robwin:jgitflow-gradle-plugin:0.6.0'
+        classpath 'io.github.robwin:jgitflow-gradle-plugin:0.7.0-SNAPSHOT-CUSTOM'
+//        classpath fileTree(include: ['*.jar'], dir: '/libs')
+//        classpath files('libs/jgitflow-gradle-plugin-0.7.0-SNAPSHOT-CUSTOM.jar')
+        classpath 'external.atlassian.jgitflow:jgit-flow-core:1.0-m5.1'
     }
 }
 
@@ -31,6 +35,7 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+//    implementation 'external.atlassian.jgitflow:jgit-flow-core:1.0-m5.1'
 }
 
 tasks.named('test') {
