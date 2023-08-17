@@ -8,6 +8,7 @@ public class GitflowgradleExampleApplication {
 
   public static void main(String[] args) {
     SpringApplication.run(GitflowgradleExampleApplication.class, args);
+    System.out.println("Changes");
   }
 
 }
