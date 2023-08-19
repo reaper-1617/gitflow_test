@@ -36,6 +36,8 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 //    implementation 'external.atlassian.jgitflow:jgit-flow-core:1.0-m5.1'
+    implementation 'org.eclipse.jgit:org.eclipse.jgit:3.7.1.201504261725-r'
+    implementation 'com.google.guava:guava:14.0.1'
 }
 
 tasks.named('test') {
