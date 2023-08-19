@@ -8,6 +8,7 @@ class GitflowgradleExampleApplicationTests {
 
   @Test
   void contextLoads() {
+    // just for changes to commit
   }
 
 }
